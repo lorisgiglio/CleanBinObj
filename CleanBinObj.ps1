@@ -6,6 +6,7 @@ $startDirectory = Get-Location
 # Find all bin and obj folders recursively
 $directories = Get-ChildItem -Path $startDirectory -Recurse -Directory -Include bin, obj
 
+
 # Count the total number of folders to delete
 $totalDirectories = $directories.Count
 $currentCount = 0
